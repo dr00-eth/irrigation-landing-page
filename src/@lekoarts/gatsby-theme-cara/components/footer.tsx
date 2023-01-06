@@ -72,7 +72,7 @@ const Footer = () => {
           </Link>
         )}
         {` `}
-        {isDark ? (
+        {/* {isDark ? (
           <Link
           sx={{ variant: 'styles.navlink', p: 2 }}
           aria-label="Irrigation Protocol GitBook"
@@ -88,7 +88,7 @@ const Footer = () => {
           >
             <Svg icon="discord" width={32} left="10%" top="65%" stroke color="icon_darkest" />
           </Link>
-        )}
+        )} */}
       </footer>
     </Box>
   )
