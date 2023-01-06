@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
-import Svg from "@lekoarts/gatsby-theme-cara/src/components/svg"
+import Svg from "./svg"
 
 const Footer = () => {
   const [colorMode, setColorMode] = useColorMode<"light" | "dark">()
@@ -42,7 +42,7 @@ const Footer = () => {
           aria-label="Irrigation Protocol Twitter"
           href="https://twitter.com/IrrigationProto"
           >
-            <Svg icon="twitter" width={32} left="40%" stroke color="icon_brightest" />
+            <Svg icon="twitter" width={32} left="40%" top="75%" stroke color="icon_brightest" />
           </Link>
         ) : (
           <Link
@@ -50,7 +50,7 @@ const Footer = () => {
           aria-label="Irrigation Protocol Twitter"
           href="https://twitter.com/IrrigationProto"
           >
-            <Svg icon="twitter" width={32} left="40%" stroke color="icon_darkest" />
+            <Svg icon="twitter" width={32} left="40%" top="75%" stroke color="icon_darkest" />
           </Link>
         )}
         {` `}
@@ -60,7 +60,7 @@ const Footer = () => {
           aria-label="Irrigation Protocol GitBook"
           href="https://docs.irrigation.finance"
           >
-            <Svg icon="github" width={32} left="60%" stroke color="icon_brightest" />
+            <Svg icon="github" width={32} left="60%" top="75%" stroke color="icon_brightest" />
           </Link>
         ) : (
           <Link
@@ -68,7 +68,7 @@ const Footer = () => {
           aria-label="Irrigation Protocol GitBook"
           href="https://docs.irrigation.finance"
           >
-            <Svg icon="github" width={32} left="60%" stroke color="icon_darkest" />
+            <Svg icon="github" width={32} left="60%" top="75%" stroke color="icon_darkest" />
           </Link>
         )}
       </footer>
