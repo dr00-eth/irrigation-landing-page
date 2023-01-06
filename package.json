@@ -1,4 +1,7 @@
 {
+  "engines": {
+    "node": "18.x"
+  },
   "private": true,
   "name": "cara",
   "description": "Irrigation Protocol is an optimization protocol built on top of Beanstalk, Buttonwood, and Olympus.",
