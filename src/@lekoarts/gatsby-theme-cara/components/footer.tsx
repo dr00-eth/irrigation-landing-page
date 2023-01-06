@@ -42,7 +42,7 @@ const Footer = () => {
           aria-label="Irrigation Protocol Twitter"
           href="https://twitter.com/IrrigationProto"
           >
-            <Svg icon="twitter" width={32} left="40%" top="75%" stroke color="icon_brightest" />
+            <Svg icon="twitter" width={32} left="45%" top="75%" stroke color="icon_brightest" />
           </Link>
         ) : (
           <Link
@@ -50,7 +50,7 @@ const Footer = () => {
           aria-label="Irrigation Protocol Twitter"
           href="https://twitter.com/IrrigationProto"
           >
-            <Svg icon="twitter" width={32} left="40%" top="75%" stroke color="icon_darkest" />
+            <Svg icon="twitter" width={32} left="45%" top="75%" stroke color="icon_darkest" />
           </Link>
         )}
         {` `}
@@ -60,7 +60,7 @@ const Footer = () => {
           aria-label="Irrigation Protocol GitBook"
           href="https://docs.irrigation.finance"
           >
-            <Svg icon="github" width={32} left="60%" top="75%" stroke color="icon_brightest" />
+            <Svg icon="github" width={32} left="68%" top="75%" stroke color="icon_brightest" />
           </Link>
         ) : (
           <Link
@@ -68,7 +68,25 @@ const Footer = () => {
           aria-label="Irrigation Protocol GitBook"
           href="https://docs.irrigation.finance"
           >
-            <Svg icon="github" width={32} left="60%" top="75%" stroke color="icon_darkest" />
+            <Svg icon="github" width={32} left="68%" top="75%" stroke color="icon_darkest" />
+          </Link>
+        )}
+        {` `}
+        {isDark ? (
+          <Link
+          sx={{ variant: 'styles.navlink', p: 2 }}
+          aria-label="Irrigation Protocol GitBook"
+          href="https://discord.gg/irrigationprotocol"
+          >
+            <Svg icon="discord" width={32} left="10%" top="65%" stroke color="icon_brightest" />
+          </Link>
+        ) : (
+          <Link
+          sx={{ variant: 'styles.navlink', p: 2 }}
+          aria-label="Irrigation Protocol GitBook"
+          href="https://discord.gg/irrigationprotocol"
+          >
+            <Svg icon="discord" width={32} left="10%" top="65%" stroke color="icon_darkest" />
           </Link>
         )}
       </footer>
