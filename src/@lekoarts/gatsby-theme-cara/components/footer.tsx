@@ -1,5 +1,6 @@
 /** @jsx jsx */
 import { Box, Flex, Link, useColorMode, jsx } from "theme-ui"
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import Svg from "./svg"
 
 const Footer = () => {
@@ -37,39 +38,39 @@ const Footer = () => {
         }}
       >
         {isDark ? (
-          <Link
+          <OutboundLink
           sx={{ variant: 'styles.navlink', p: 2 }}
           aria-label="Irrigation Protocol Twitter"
           href="https://twitter.com/IrrigationProto"
           >
             <Svg icon="twitter" width={32} left="40%" top="75%" stroke color="icon_brightest" />
-          </Link>
+          </OutboundLink>
         ) : (
-          <Link
+          <OutboundLink
           sx={{ variant: 'styles.navlink', p: 2 }}
           aria-label="Irrigation Protocol Twitter"
           href="https://twitter.com/IrrigationProto"
           >
             <Svg icon="twitter" width={32} left="40%" top="75%" stroke color="icon_darkest" />
-          </Link>
+          </OutboundLink>
         )}
         {` `}
         {isDark ? (
-          <Link
+          <OutboundLink
           sx={{ variant: 'styles.navlink', p: 2 }}
           aria-label="Irrigation Protocol GitBook"
           href="https://docs.irrigation.finance"
           >
             <Svg icon="github" width={32} left="60%" top="75%" stroke color="icon_brightest" />
-          </Link>
+          </OutboundLink>
         ) : (
-          <Link
+          <OutboundLink
           sx={{ variant: 'styles.navlink', p: 2 }}
           aria-label="Irrigation Protocol GitBook"
           href="https://docs.irrigation.finance"
           >
             <Svg icon="github" width={32} left="60%" top="75%" stroke color="icon_darkest" />
-          </Link>
+          </OutboundLink>
         )}
       </footer>
     </Box>
