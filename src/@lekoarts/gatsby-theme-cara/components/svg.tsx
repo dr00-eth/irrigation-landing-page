@@ -3,7 +3,7 @@ import { jsx } from "theme-ui"
 import { withPrefix } from "gatsby"
 import { hidden } from "../styles/utils"
 
-type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "twitter" | "github" | "logo"
+type IconType = "triangle" | "circle" | "arrowUp" | "upDown" | "box" | "hexa" | "cross" | "twitter" | "github" | "discord" | "logo"
 
 type SVGProps = {
   stroke?: boolean
@@ -24,6 +24,7 @@ const viewBox = {
   hexa: `0 0 30 30`,
   cross: `0 0 100 100`,
   logo: `0 0 216.33 273`,
+  discord: `-10 0 100 50`,
 }
 
 const Svg = ({ stroke = false, color = ``, width, icon, left, top, hiddenMobile = false }: SVGProps) => (
